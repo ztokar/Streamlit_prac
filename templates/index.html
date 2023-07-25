@@ -1,0 +1,16 @@
+<h1>Hello World!</h1>
+<p>This is my first webpage</p>
+<p>Isn't this cool</p>
+<p>Isn't {{first_name|safe}} cool</p>
+
+<p>{{stuff|safe}}</p>
+<h3>{{stuff|striptags}}</h3>  
+<!-- #striptags is used to take out html to fight hackers -->
+<h3>Favorite pizza</h3>
+
+{% for topping in favorite_pizza%}
+	{{topping}} <br/>
+{% endfor %}
+
+<br><br/>
+{{favorite_pizza.0}}
